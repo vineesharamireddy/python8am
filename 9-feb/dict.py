@@ -1,19 +1,31 @@
-#creating dictionary
+#create a dictionary
+#{1:["english","maths","science"], 2:[10,20,30], 3:["bio-botany","bio-zoology","Algebra"]}
+#Extract "bobtn" from above dictionary
+#Extract "arbeg" from above dictionary
+#print all keys in dictionary and convert it into tuple
+#Find the average of all numbers available under key "2"
 
-d1={}
-print(d1)
-
+d1={}   #empty dict
 
 d2={1:["english","maths","science"], 2:[10,20,30], 3:["bio-botany","bio-zoology","Algebra"]}
 print(d2)
-print(d2.keys())
-print(d2.values())
+print(d2[3][0][::2])
+print(d2[3][2][6:-6:-1])
+
+print(tuple(d2.keys()))
+
+
+print(sum(d2[2]))
+print(len(d2[2]))
+print(sum(d2[2])/len(d2[2]))
 
 
 output:
 
- {}
 {1: ['english', 'maths', 'science'], 2: [10, 20, 30], 3: ['bio-botany', 'bio-zoology', 'Algebra']}
-dict_keys([1, 2, 3])
-dict_values([['english', 'maths', 'science'], [10, 20, 30], ['bio-botany', 'bio-zoology', 'Algebra']])
-   
+bobtn
+arbeg
+(1, 2, 3)
+60
+3
+20.0
