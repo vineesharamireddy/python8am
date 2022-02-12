@@ -27,8 +27,8 @@ output:
 
 #add 1 elements to that list
 
-li4.append(1)
-print(li4)
+li3.append(1)
+print(li3)
 
 output:
 
@@ -36,25 +36,25 @@ output:
 
 #Find frequency of 8 (count)
 
-print(li4.count(1))
+print(li3.count(8))
 output:
 
 2
 
 #find the mean of the list
 
-print("mean of li1 is",(sum(li1))/len(li1))
+print("mean of li1 is",(sum(li3))/len(li3))
 
 output:
-mean of li1 is 5.5
+mean of li3 is 5.5
 
 
 #find sum (List) + min + Max 
 
-print(min(li4))
-print(sum(li4))
-print(max(li4))
-print(len(li4))
+print(min(li3))
+print(sum(li3))
+print(max(li3))
+print(len(li3))
 
 output:
 
@@ -67,10 +67,10 @@ output:
 
 #Find median of the list
 
-li1.sort()
-a=int((len(li1)/2))
+li3.sort()
+a=int((len(li3)/2))
 print(a)
-print((li1[a]+li1[a+1])/2)
+print((li3[a]+li3[a+1])/2)
 
 output:
 
@@ -80,7 +80,7 @@ output:
 
 #remove duplicates from list and give output in the format of tuple
 
-print(set(tuple(li1)))
+print(set(tuple(li3)))
 
 output:
 
