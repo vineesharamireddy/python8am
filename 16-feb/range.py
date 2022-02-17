@@ -91,10 +91,12 @@ enter number5
 #Task4:Get two integers from user  & print multiples of 8 between them
 a=int(input())
 b=int(input())
+li=[]
 for i in range(a,b):
     if i %8==0:
         print(f'{i}: multiple of 8')
-
+        li.append(i)
+print(li)
 
 output:
 
@@ -111,7 +113,7 @@ output:
 80: multiple of 8
 88: multiple of 8
 96: multiple of 8
-
+[16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96]
 
 #Task5:    Input:Li1 = [3,4,5,2,7,8,9,10]
 # Output:   Li_odd = [3,5,7,9]     Li_even = [4,2,8,10]
