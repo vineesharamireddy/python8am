@@ -98,11 +98,19 @@ for i in range(a,b):
 
 output:
 
-40
-60
+    10
+100
+16: multiple of 8
+24: multiple of 8
+32: multiple of 8
 40: multiple of 8
 48: multiple of 8
 56: multiple of 8
+64: multiple of 8
+72: multiple of 8
+80: multiple of 8
+88: multiple of 8
+96: multiple of 8
 
 
 #Task5:    Input:Li1 = [3,4,5,2,7,8,9,10]
