@@ -20,7 +20,7 @@ output:
 1
 57
 
-#5)Python program to print even numbers and odd numbers in a list
+#5,6)Python program to print even numbers and odd numbers in a list
 
 li=[2,4,6,3,9,5]
 li_even=[]
@@ -43,7 +43,7 @@ odd number list is: [3]
 odd number list is: [3, 9]
 odd number list is: [3, 9, 5]
 
-#6,7) Python program to print all even numbers and odd numbers in a range
+#7,8) Python program to print all even numbers and odd numbers in a range
 
 a=int(input())
 b=int(input())
@@ -65,7 +65,7 @@ output:
 even number list: [10, 12, 14, 16, 18, 20, 22, 24, 26, 28]
 odd nuber list: [11, 13, 15, 17, 19, 21, 23, 25, 27, 29]
         
-#8,9) Python program to print positive numbers and negative numbers in a range
+#10,9) Python program to print positive numbers and negative numbers in a range
 
 m=int(input())
 n=int(input())
@@ -86,7 +86,7 @@ output:
 1 :is positive number
 2 :is positive number
 
-#10,11) Python program to print positive numbers and negative numbers in a list
+#12,11) Python program to print positive numbers and negative numbers in a list
 
 l=[-2,-4,0,6,9,4,-9]
 for i in l:
@@ -107,7 +107,7 @@ output:
 4 :is positive number
 -9 :is negative number
 
-#12) Remove multiple elements from a list in Python
+#13) Remove multiple elements from a list in Python
 
 li=[2,4,6,3,9,5,-6]
 li.pop(4)
@@ -123,7 +123,7 @@ output:
 [4, 6, 3, 5, -6]
 [4, -6]
 
-#13) python program to find Cumulative sum of a list
+#14) python program to find Cumulative sum of a list
 
 li=[3,2,5,8,6,1,4]
 l1=[]
@@ -140,7 +140,7 @@ output:
 [3, 2, 5, 8, 6, 1, 4]
 [3, 5, 10, 18, 24, 25, 29]
 
-#14) Python | Multiply all numbers in the list
+#15) Python | Multiply all numbers in the list
 
 l1=[2,4,3,6,4,7,9]
 a=1
@@ -158,7 +158,7 @@ output:
 4032
 36288
 
-#15) Python program to find second largest number in a list
+#16) Python program to find second largest number in a list
 
 li=[23,45,32,76,54,92,84]
 l1=li.sort()
@@ -170,7 +170,7 @@ output:
 [23, 32, 45, 54, 76, 84, 92]
 84
 
-#16) Python program to find N largest elements from a list
+#17) Python program to find N largest elements from a list
 
 n=int(input())
 li=[23,45,32,76,54,92,84]
@@ -184,7 +184,7 @@ output:
 [23, 32, 45, 54, 76, 84, 92]
 [54, 76, 84, 92]
 
-#17) Python | Sort the values of first list using second list
+#18) Python | Sort the values of first list using second list
 
 li=[23,45,32,76,54,92,84]
 l1=[]
@@ -197,7 +197,7 @@ output:
 
 [23, 32, 45, 54, 76, 84, 92]
 
-#18)  Python program to interchange first and last elements in a list
+#19)  Python program to interchange first and last elements in a list
 
 def interchange_list(list):
     temp=0
@@ -215,7 +215,7 @@ output:
 
 [92, 45, 67, 89, 12]
 
-#19) Python program to swap two elements in a list
+#20) Python program to swap two elements in a list
 
 def s_list(list,p1,p2):
       list[3],list[4]=list[4],list[3]
@@ -228,10 +228,124 @@ print(list)
 output:
 
 [23, 12, 32, 65, 54, 76, 89]
+========================================
+l1=[3,5,8,4,0,2,5,7]
+
+#21)Python | Ways to find length of list
+
+a=len(l1)
+print(a)
+
+output:
+
+8
+
+#22)  Python | Ways to check if element exists in list
+
+print(l1.index(5))
+
+output:
+
+1
+
+#23)Different ways to clear a list in Python
+
+l1.clear()
+print(l1)
+
+output:
+
+[]
+
+#24)Python – Remove empty List from List
+l2=[2,4,[],6,[],5,9,[],7,4,1,4,6]
+print("The original list is : " + str(l2))
+res = [ele for ele in l2 if ele != []]
+print ("List after empty list removal : " + str(res))
+
+output:
+
+The original list is : [2, 4, [], 6, [], 5, 9, [], 7, 4, 1, 4, 6]
+List after empty list removal : [2, 4, 6, 5, 9, 7, 4, 1, 4, 6]
 
 
+#25)Python | Count occurrences of an element in a list
+print(l2.count(4))
 
+output:
 
+3
+
+#26)Python | Cloning or Copying a list
+
+def cpy_list(l1):
+    l2=l1.copy()
+    return l2
+l1=[2,5,3,9,6]
+print(cpy_list(l1))
+
+output:
+
+[2,5,3,9,6]
+
+# 27)Python | Remove empty tuples from a list
+
+def Remove(tuples):
+    tuples = [t for t in tuples if t]
+    return tuples
+tuples = [(), ('ram','15','8'), (), ('laxman', 'sita'), 
+          ('krishna', 'akbar', '45'), ('',''),()]
+print(Remove(tuples))
+
+output:
+
+[('ram', '15', '8'), ('laxman', 'sita'), ('krishna', 'akbar', '45'), ('', '')]
+
+#28)Python | Program to print duplicates from a list of integers
+
+list = [1,2,1,2,3,4,5,1,1,2,5,6,7,8,9,9] 
+new = []  
+for a in list: 
+    n = list.count(a) 
+    if n > 1:        
+ 
+        if new.count(a) == 0:  # condition to check
+ 
+            new.append(a)
+ 
+print(new)
+
+output:
+
+[1, 2, 5, 9]
+
+#29)Python | Sum of number digits in List
+
+test_list = [12, 67, 98, 34]
+print("The original list is : " + str(test_list))
+res = []
+for ele in test_list:
+    sum = 0
+    for digit in str(ele):
+        sum += int(digit)
+    res.append(sum)
+print ("List Integer Summation : " + str(res))
+
+output:
+
+The original list is : [12, 67, 98, 34]
+List Integer Summation : [3, 13, 17, 7]
+
+#30)Break a list into chunks of size N in Python
+
+l = [1, 2, 3, 4, 5, 6, 7, 8, 9] 
+n = 4
+x = [l[i:i + n] for i in range(0, len(l), n)] 
+print(x)
+
+output:
+
+[[1, 2, 3, 4], [5, 6, 7, 8], [9]]
 
 
 
