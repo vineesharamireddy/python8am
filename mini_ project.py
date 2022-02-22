@@ -31,3 +31,25 @@ def game(li):
             print("number of games finished")
 li=["rock","paper","scissor"]
 game(li)
+
+output:
+
+give total number of games4
+4
+entering into game: 1
+rock
+scissor
+user won
+entering into game: 2
+paper
+rock
+user  won
+entering into game: 3
+scissor
+rock
+system  won
+entering into game: 4
+rock
+scissor
+user won
+number of games finished
