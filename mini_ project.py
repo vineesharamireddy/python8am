@@ -1,55 +1,52 @@
 import random
-l1=["rock","paper","scissor"]
-
 def game(li):
     n=int(input("give total number of games"))
     print(n)
-    li=""
+    l=""
+    user_won=0
+    system_won=0
     for i in range(n):
         if i<n:
             print("entering into game:", i+1)
-            li=(input())
-            a=random.choice(l1)
-            print(a)
-            if a==li or li==a:
-                print("tie game")
-            elif li=="paper" and a=="rock":
-                print("user  won")
-            elif  li=="scissor" and a=="rock":
-                print("system  won")
-            elif li=="scissor" and a=="paper":
-                print("user won")
-            elif  li=="rock" and a=="paper":
-                print("system won")
-            elif  li=="rock" and a=="scissor":
-                print("user won")
-            elif li=="paper" and a=="scissor":
-                print("system won")
+            l=(input())
+            print("user input is:",l)
+            a=random.choice(li)
+            print("system input is:",a)
+            if a==l or l==a:
+                print("tie, no points for user and system")
+            elif l=="paper" and a=="rock":
+                user_won=user_won+1
+                print("user points are:",user_won)
+                print("system points are:",system_won)
+            elif  l=="scissor" and a=="rock":
+                system_won=system_won+1
+                print("system points are:",system_won)
+                print("user points are:",user_won)
+            elif l=="scissor" and a=="paper":
+                user_won=user_won+1
+                print("user points are:",user_won)
+                print("system points are:",system_won)
+            elif  l=="rock" and a=="paper":
+                system_won=system_won+1
+                print("system points are:",system_won)
+                print("user points are:",user_won)
+            elif  l=="rock" and a=="scissor":
+                user_won=user_won+1
+                print("user points are:",user_won)
+                print("system points are",system_won)
+            elif l=="paper" and a=="scissor":
+                system_won=system_won+1
+                print("system pints are:",system_won)
+                print("user points are:",user_won)
             else:
                 print("invalid input")
     else:
-            print("number of games finished")
+         print("number of games finished")
+    if user_won > system_won:
+        print("congratulations......user won the game")
+    elif user_won==system_won:
+        print("its a tie game")
+    else:
+        print("congratulations....system won the game")
 li=["rock","paper","scissor"]
 game(li)
-
-output:
-
-give total number of games4
-4
-entering into game: 1
-rock
-scissor
-user won
-entering into game: 2
-paper
-rock
-user  won
-entering into game: 3
-scissor
-rock
-system  won
-entering into game: 4
-rock
-scissor
-user won
-number of games finished
