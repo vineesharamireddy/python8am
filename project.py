@@ -3,7 +3,7 @@ def create_list():
     list1=[]
     no_of_ele=int(input("enter number of elements:"))
     for i in range(0,no_of_ele):
-        ele=int(input())
+        ele=(input())
         list1.append(ele)
     print("created list is :",list1)
     return list1
@@ -39,12 +39,12 @@ def set_create():
     set1=set()
     no_of_ele=int(input("enter number of elements:"))
     for i in range(0,no_of_ele):
-        ele=int(input())
+        ele=(input())
         set1.add(ele)
     print("created set is :",set1)
     return set1
 def set_add():
-    add_elements=int(input("enter elements to add to set"))
+    add_elements=(input("enter elements to add to set"))
     set1.add(add_elements)
     return set1
 def set_pop():
@@ -151,8 +151,7 @@ while True:
         print("selected data structure is list")
         list1=create_list()
         while True:
-            print("1.append","\n2.pop","\n3.sum","\n4.max","\n5.min","\n6.len", "\n7.mean","\n8.exit")
-            list_opr=int(input("user selected option in lists is:"))
+            list_opr=int(input("user selected option is ::\n1.append \n2.pop \n3.sum \n4.max \n5.min \n6.len \n7.mean \n8.exit"))
             if list_opr==1:
                 list1=list_append()
                 print("list after adding elements is:",list1)
@@ -176,8 +175,7 @@ while True:
         s=set_create()
         set1=set_create()
         while True:
-            print("1.add","\n2.pop","\n3.sum","\n4.max","\n5.min","\n6.intersection","\n7.union","\n8.exit")
-            set_opr=int(input("user selected option in set is:"))
+            set_opr=int(input("user selected option in set is: 1.add \n2.pop \n3.sum \n4.max \n5.min \n6.intersection \n7.union \n8.exit"))
             if set_opr==1:
                 set2=set_add()
                 print("set after adding ele:",set2)
@@ -224,8 +222,7 @@ while True:
         print("user selected data structure is dictionaries:")
         dict1=dict_create()
         while True:
-            print("1.add","\n2.pop","\n3.update","\n4.max","\n5.min","\n6.exit")
-            dict_opr=int(input("user selected option is dictionaries:"))
+            dict_opr=int(input("user selected option is dictionaries:1.add \n2.pop \n3.update \n4.max \n5.min \n6.exit"))
             if dict_opr==1:
                 dict_add()
             elif dict_opr==2:
@@ -240,6 +237,9 @@ while True:
                 break
     elif user_selection==5:
         break
+    
+
 
     
     
+
